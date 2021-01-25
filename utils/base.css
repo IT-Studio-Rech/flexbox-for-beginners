@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  height: 100%;
+  width: 100%;
+}
+
+.btns >* {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+aside {
+  width: 300px;
+  background: #BCE8DC;
+  padding: 20px;
+}
+aside >*:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #346659;
+}
+aside >*:last-child {
+  padding-top: 20px;
+}
+section {
+  flex: 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section >div {
+  width: 800px;
+}
+
+input[type="button"] {
+  background: #346659;
+  color: white;
+  border: 1px solid #51635E;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+
+code {
+  font-family: 'Dosis', sans-serif;
+  background: #ccc;
+  padding: 1px 3px;
+}
+
+button {
+  margin: 0 auto 1em;
+}
+
+.container {
+  border: solid 2px;
+  background: #BCE8DC;
+  margin: 1em 0;
+}
+
+
+
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+label {
+  margin-right: 1.3em;
+  padding: 8px;
+}
+
+.item {
+  background: #5AB099;
+  border: solid 2px #51635E;
+  margin: 5px;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  font-weight: bold;
+  line-height: 1.4;
+}

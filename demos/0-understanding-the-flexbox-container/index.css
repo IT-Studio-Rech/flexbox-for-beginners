@@ -1,0 +1,7 @@
+.item {
+  min-height: 100px;
+}
+
+.flexcontainer {
+  display: flex;
+}

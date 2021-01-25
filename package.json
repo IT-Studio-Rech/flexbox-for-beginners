@@ -1,0 +1,27 @@
+{
+  "name": "flexbox-for-beginners",
+  "version": "1.0.0",
+  "description": "https://www.it-studio-rech.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasRech/flexbox-for-beginners.git"
+  },
+  "keywords": [
+    "flexbox",
+    "beginners",
+    "demo",
+    "tech",
+    "talk"
+  ],
+  "author": "Jonas Rech (https://www.it-studio-rech.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasRech/flexbox-for-beginners/issues"
+  },
+  "homepage": "https://github.com/JonasRech/flexbox-for-beginners#readme"
+}
