@@ -31,7 +31,13 @@
       ToDo - behavior for space-between (single item)
     </p>
     <div>
-      <input type="button" name="only-one-off" value="only-one" id="only-one">
+      <input type="button" name="only-one" value="only-one" id="only-one">
+    </div>
+    <p>
+      ToDo - Cross Axis
+    </p>
+    <div>
+      <input type="button" name="cross-axis" value="cross-axis" id="cross-axis">
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -53,7 +59,14 @@
 <script>
   const button = document.querySelector('#only-one');
   button.addEventListener('click', function() {
-    document.querySelector('.container').classList.toggle('only-one')
+    document.querySelector('.container').classList.toggle('only-one');
+    button.classList.toggle('active');
+  }, false);
+
+  const button2 = document.querySelector('#cross-axis');
+  button2.addEventListener('click', function() {
+    document.querySelector('.container').classList.toggle('cross-axis');
+    button2.classList.toggle('active');
   }, false);
 </script>
 

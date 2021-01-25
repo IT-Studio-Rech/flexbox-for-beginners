@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../utils/base.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<main>
+  <aside>
+    <h2>flex-direction</h2>
+    <p>
+      Added to the container<br />
+      Default Main Axis (X) (row)
+    </p>
+    <div class="btns">
+      <label for="row">row (default) <input type="radio" name="flexdirection" value="row" id="row" checked></label>
+      <label for="row-reverse">row-reverse <input type="radio" name="flexdirection"  value="row-reverse" id="row-reverse"></label>
+      <label for="column">column <input type="radio" name="flexdirection"  value="column" id="column"></label>
+      <label for="column-reverse">column-reverse <input type="radio" name="flexdirection"  value="column-reverse" id="column-reverse"></label>
+    </div>
+    <div class="dir">
+      <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
+      <label for="rtl">right -> left <input type="radio" value="rtl" name="direction" id="rtl"></label>
+    </div>
+  </aside>
+  <section>
+    <div>
+      <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+</body>
