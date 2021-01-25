@@ -13,6 +13,8 @@ body {
   line-height: 1.4;
   height: 100%;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .btns >* {
@@ -47,6 +49,7 @@ section {
 }
 section >div {
   width: 800px;
+  position: relative;
 }
 
 input[type="button"] {
@@ -69,11 +72,25 @@ button {
 }
 
 .container {
-  border: solid 2px;
+  border: 1px solid #51635E;
   background: #BCE8DC;
-  margin: 1em 0;
 }
+section>div:after {
+  content: "----------------> MAIN AXIS ---------------->";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  transform-origin: left top;
+}
+section>div:before {
 
+  content: "----------------> CROSS AXIS ---------------->";
+  position: absolute;
+  transform: rotate(90deg);
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+}
 
 
 .ltr {
@@ -91,7 +108,7 @@ label {
 
 .item {
   background: #5AB099;
-  border: solid 2px #51635E;
+  border: solid 1px #51635E;
   margin: 5px;
   text-align: center;
   font-size: 4em;
