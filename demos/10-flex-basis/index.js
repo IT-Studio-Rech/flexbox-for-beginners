@@ -6,7 +6,7 @@ import('../../utils/doc-ready.js').then((module) => {
         flexitem = document.querySelector('.extra');
 
     input.addEventListener('input', function() {
-      flexitem.style.flexShrink = this.value;
+      flexitem.style.flexBasis = this.value + 'px';
     }, false);
 
     for (i of dirs) {

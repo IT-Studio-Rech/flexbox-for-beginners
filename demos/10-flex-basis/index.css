@@ -1,7 +1,7 @@
 .item {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 500px;
+  flex-basis: auto;
 }
 
 .container {
@@ -16,7 +16,5 @@
 
 .extra {
   background: #51635E;
-  flex-basis: 500px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex-basis: content;
 }

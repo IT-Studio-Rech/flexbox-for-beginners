@@ -16,12 +16,16 @@
 
 <main>
   <aside>
-    <h2>flex-basis</h2>
+    <h2>align-self</h2>
     <p>
-      ToDo
+      ToDo (auf auto hinweisen)
     </p>
     <div class="btns">
-      <label for="flexbasis">Increase the <code>flex-basis</code> value (in px) for flex item #3:<br><input type="number" value="0" min="0" max="700" step="50" id="flexbasis"></label>
+      <label for="stretch">stretch <input type="radio" name="alignitems"  value="stretch" id="stretch" checked></label>
+      <label for="flex-start">flex-start <input type="radio" name="alignitems"  value="flex-start" id="flex-start"></label>
+      <label for="flex-end">flex-end <input type="radio" name="alignitems"  value="flex-end" id="flex-end"></label>
+      <label for="center">center <input type="radio" name="alignitems"  value="center" id="center"></label>
+      <label for="baseline">baseline <input type="radio" name="alignitems"  value="baseline" id="baseline"></label>
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -32,8 +36,17 @@
     <div>
       <div class="container">
         <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item extra">3</div>
+        <div class="item large">2</div>
+        <div class="item large">3</div>
+        <div class="item">4</div>
+        <div class="item extra">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item large">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
       </div>
     </div>
   </section>

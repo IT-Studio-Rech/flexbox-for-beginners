@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="index.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../../utils/base.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<main>
+  <aside>
+    <h2>Shorthand & Real world examples</h2>
+    <p>
+      <code><strong>flex</strong>: flex-grow flex-shrink flex-basis;</code>
+    </p>
+    <p>
+      <code><strong>flex-flow</strong>: flex-direction flex-wrap;</code>
+    </p>
+  </aside>
+  <section>
+    <div>
+      <div class="container">
+        <h3>
+          act like min-width
+        </h3>
+        <p>
+          <code><strong>flex</strong>: 1 0 200px;</code><br />
+          - at least min 200px width<br />
+          - fills the remaining space, flex-grow: 1;
+        </p>
+        <h3>
+          act like max-width
+        </h3>
+        <p>
+          <code><strong>flex</strong>: 0 1 200px;</code><br />
+          - at least max 200px width<br />
+          - could be smaller as 200px
+        </p>
+        <h3>
+          act like width
+        </h3>
+        <p>
+          <code><strong>flex</strong>: 0 0 200px;</code><br />
+          - always 200px width
+        </p>
+        <h3>
+          fill empty space
+        </h3>
+        <p>
+          <code><strong>flex</strong>: 1 0 auto;</code><br />
+          - item may expand but is at least as large as its content
+        </p>
+        <h3>
+          default
+        </h3>
+        <p>
+          <code><strong>flex</strong>: 0 1 auto;</code><br />
+          - item is at least as large as its content
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+</body>
