@@ -7,14 +7,29 @@
   display: flex;
 }
 
-.nowrap {
-  flex-wrap: nowrap;
+.flex-start {
+  justify-content: flex-start;
 }
 
-.wrap {
-  flex-wrap: wrap;
+.flex-end {
+  justify-content: flex-end;
 }
 
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.only-one >.item:nth-child(2) {
+  display: none;
+}
+.only-one >.item:nth-child(3) {
+  display: none;
 }
