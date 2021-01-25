@@ -115,6 +115,7 @@ label {
   color: white;
   font-weight: bold;
   line-height: 1.4;
+  min-width: 15%;
 }
 
 input[type="button"] {

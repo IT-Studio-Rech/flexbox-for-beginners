@@ -1,0 +1,38 @@
+.item {
+  min-height: 100px;
+}
+
+.container {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+
+.flex-end {
+  align-content: flex-end;
+}
+
+.center {
+  align-content: center;
+}
+
+.stretch {
+  align-content: stretch;
+}
+
+.space-between {
+  align-content: space-between;
+}
+
+.space-around {
+  align-content: space-around;
+}
+
+.large {
+  height: 160px;
+}

@@ -1,0 +1,14 @@
+.item {
+  min-height: 100px;
+}
+
+.container {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.extra {
+  background: #51635E;
+}

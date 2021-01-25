@@ -1,0 +1,22 @@
+.item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 500px;
+}
+
+.container {
+  min-height: 500px;
+  display: flex;
+}
+
+.container>div:nth-child(1),
+.container>div:nth-child(3) {
+  flex-grow: 1;
+}
+
+.extra {
+  background: #51635E;
+  flex-basis: 500px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

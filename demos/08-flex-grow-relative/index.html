@@ -16,16 +16,15 @@
 
 <main>
   <aside>
-    <h2>flex-direction</h2>
+    <h2>flex-grow relative</h2>
     <p>
-      Added to the container<br />
-      Default Main Axis (X) (row)
+      ToDo
     </p>
     <div class="btns">
-      <label for="row">row (default) <input type="radio" name="flexdirection" value="row" id="row" checked></label>
-      <label for="row-reverse">row-reverse <input type="radio" name="flexdirection"  value="row-reverse" id="row-reverse"></label>
-      <label for="column">column <input type="radio" name="flexdirection"  value="column" id="column"></label>
-      <label for="column-reverse">column-reverse <input type="radio" name="flexdirection"  value="column-reverse" id="column-reverse"></label>
+      <label for="flexgrow">
+        flex-grow: [value] (for item 2)
+        <input type="number" value="0" min="0" step="1" id="flexgrow">
+      </label>
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -36,10 +35,8 @@
     <div>
       <div class="container">
         <div class="item">1</div>
-        <div class="item">2</div>
+        <div class="item extra">2</div>
         <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
       </div>
     </div>
   </section>
