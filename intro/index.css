@@ -1,0 +1,32 @@
+section>div:before, section>div:after {
+  content: "";
+}
+section>div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 90%;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+aside {
+  width: 300px;
+}
+.container p:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #346659;
+}
+
+.container .start {
+  display: flex;
+  flex: 1 auto;
+  align-items: center;
+  justify-content: center;
+}
