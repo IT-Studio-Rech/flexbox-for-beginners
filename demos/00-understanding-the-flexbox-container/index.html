@@ -17,11 +17,18 @@
 <main>
   <aside>
     <h2>Understanding the flexbox container</h2>
-    <p>
-      Set the container to <code>display: block</code> or <code>display: flex</code>.
-    </p>
+    <ul>
+      <li>
+        The first thing you gotta have to do is to specify the wrapping container as <code>display: flex;</code> or <code>display: inline-flex;</code>.
+      </li>
+      <li>
+        By default display direction for all the items inside the container is horizontally (main-axis), default value is <code>flex-direction: row;</code>
+      </li>
+    </ul>
     <div class="btns">
-      <input type="button" value="flexcontainer" />
+      <input type="button" value="display-block" />
+      <input type="button" value="display-flex" />
+      <input type="button" value="display-inline-flex" />
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -37,6 +44,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
       </div>
+      Some content, positioned directly after the container.
     </div>
   </section>
 </main>

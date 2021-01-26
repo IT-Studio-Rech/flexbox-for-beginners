@@ -18,14 +18,20 @@
   <aside>
     <h2>align-items</h2>
     <p>
-      ToDo
+      Align each flex-item on the main-axis (for default flex-direction: row)
     </p>
     <div class="btns">
-      <label for="stretch">stretch <input type="radio" name="alignitems"  value="stretch" id="stretch" checked></label>
-      <label for="flex-start">flex-start <input type="radio" name="alignitems"  value="flex-start" id="flex-start"></label>
-      <label for="flex-end">flex-end <input type="radio" name="alignitems"  value="flex-end" id="flex-end"></label>
-      <label for="center">center <input type="radio" name="alignitems"  value="center" id="center"></label>
-      <label for="baseline">baseline <input type="radio" name="alignitems"  value="baseline" id="baseline"></label>
+      <input type="button" name="stretch" value="stretch" id="stretch">
+      <input type="button" name="flex-start" value="flex-start" id="flex-start">
+      <input type="button" name="flex-end" value="flex-end" id="flex-end">
+      <input type="button" name="center" value="center" id="center">
+      <input type="button" name="baseline" value="baseline" id="baseline">
+    </div>
+    <p>
+      Switch to cross-axis and see how <code>align-items</code> just works there.
+    </p>
+    <div>
+      <input type="button" name="cross-axis" value="cross-axis" id="cross-axis" />
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -50,7 +56,12 @@
   </section>
 </main>
 
-
-
+<script>
+  const button2 = document.querySelector('#cross-axis');
+  button2.addEventListener('click', function() {
+    document.querySelector('.container').classList.toggle('cross-axis');
+    button2.classList.toggle('active');
+  }, false);
+</script>
 
 </body>

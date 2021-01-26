@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.active {
+  box-shadow: rgba(0,0,0,0.75) 1px 1px 1px 1px;
+  color: #BCE8DC !important;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -21,6 +26,7 @@ body {
   width: 100%;
   display: block;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 main {
@@ -30,9 +36,10 @@ main {
   flex-direction: row;
 }
 aside {
-  width: 300px;
+  width: 350px;
   background: #BCE8DC;
   padding: 20px;
+  overflow-y: auto;
 }
 aside >*:not(:last-child) {
   padding-bottom: 20px;
@@ -58,6 +65,13 @@ input[type="button"] {
   border: 1px solid #51635E;
   padding: 10px;
   font-size: 1.4em;
+}
+input[type="number"] {
+  background: #346659;
+  color: white;
+  border: 1px solid #51635E;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 
@@ -115,9 +129,17 @@ label {
   color: white;
   font-weight: bold;
   line-height: 1.4;
-  min-width: 15%;
+  /*min-width: 15%;*/
 }
 
 input[type="button"] {
   cursor: pointer;
+}
+
+ul {
+  list-style-type: "→";
+}
+ul li {
+  margin-bottom: 10px;
+  padding-left: 5px;
 }

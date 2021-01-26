@@ -2,6 +2,14 @@
   min-height: 100px;
 }
 
-.flexcontainer {
+.display-flex {
   display: flex;
+}
+
+.display-inline-flex {
+  display: inline-flex;
+}
+
+.display-block {
+  display: block;
 }

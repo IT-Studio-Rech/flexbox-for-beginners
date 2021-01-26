@@ -1,5 +1,6 @@
 .item {
   min-height: 100px;
+  min-width: 15%;
 }
 
 .container {

@@ -33,3 +33,8 @@
 .large {
   height: 160px;
 }
+
+.cross-axis {
+  height: 800px;
+  flex-direction: column;
+}

@@ -17,18 +17,25 @@
 <main>
   <aside>
     <h2>order</h2>
-    <p>
-      ToDo
-    </p>
+    <ul>
+      <li>
+        The order property accepts a numeric value.
+      </li>
+      <li>
+        In this example every item has a order property, equal to his shown number, also the highlighted item which has the order property of 4.
+      </li>
+      <li>
+        The button changes the order of the selected element, it becomes interesting at the order <code>3, 4 and 5</code>.
+      </li>
+    </ul>
     <div class="btns">
-      <label for="one">1 <input type="radio" name="order"  value="one" id="one"></label>
-      <label for="two">2 <input type="radio" name="order"  value="two" id="two"></label>
-      <label for="three">3 <input type="radio" name="order"  value="three" id="three"></label>
-      <label for="four">4 <input type="radio" name="order"  value="four" id="four"></label>
-      <label for="five">5 <input type="radio" name="order"  value="five" id="five" checked></label>
-      <label for="six">6 <input type="radio" name="order"  value="six" id="six"></label>
-      <label for="seven">7 <input type="radio" name="order"  value="seven" id="seven"></label>
-      <label for="eight">8 <input type="radio" name="order"  value="eight" id="eight"></label>
+      <input type="button" name="order"  value="two" id="two">
+      <input type="button" name="order"  value="three" id="three">
+      <input type="button" name="order"  value="four" id="four">
+      <input type="button" name="order"  value="five" id="five">
+      <input type="button" name="order"  value="six" id="six">
+      <input type="button" name="order"  value="seven" id="seven">
+      <input type="button" name="order"  value="eight" id="eight">
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -41,8 +48,8 @@
         <div class="item one">1</div>
         <div class="item two">2</div>
         <div class="item three">3</div>
-        <div class="item four">4</div>
-        <div class="item five extra">5</div>
+        <div class="item four extra">4</div>
+        <div class="item five">5</div>
         <div class="item six">6</div>
         <div class="item seven">7</div>
         <div class="item eight">8</div>
@@ -54,8 +61,5 @@
     </div>
   </section>
 </main>
-
-
-
 
 </body>

@@ -38,8 +38,3 @@
   flex-direction: column;
   height: 800px;
 }
-
-.active {
-  box-shadow: rgba(0,0,0,0.75) 1px 1px 1px 1px;
-  color: #BCE8DC !important;
-}

@@ -17,13 +17,19 @@
 <main>
   <aside>
     <h2>flex-wrap</h2>
-    <p>
-      Wrap the items, added to the flex container
-    </p>
+    <ul>
+      <li>You can wrap your flex items if they do not fit (depening on the width of each item) inside a row</li>
+      <li>
+        By default no items will wrap even with the <code>width</code> property.
+      </li>
+      <li>
+        If you use <code>min-width</code> property, the items are going to flow over the container, but will not break.
+      </li>
+    </ul>
     <div class="btns">
-      <label for="nowrap">row <input type="radio" name="flexwrap" value="nowrap" id="nowrap" checked></label>
-      <label for="wrap">wrap <input type="radio" name="flexwrap"  value="wrap" id="wrap"></label>
-      <label for="wrap-reverse">wrap-reverse <input type="radio" name="flexwrap"  value="wrap-reverse" id="wrap-reverse"></label>
+      <input type="button" name="flexwrap" value="nowrap" id="nowrap">
+      <input type="button" name="flexwrap"  value="wrap" id="wrap">
+      <input type="button" name="flexwrap"  value="wrap-reverse" id="wrap-reverse">
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
@@ -43,6 +49,9 @@
         <div class="item">8</div>
         <div class="item">9</div>
         <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
       </div>
     </div>
   </section>

@@ -17,15 +17,19 @@
 <main>
   <aside>
     <h2>flex-direction</h2>
-    <p>
-      Added to the container<br />
-      Default Main Axis (X) (row)
-    </p>
+    <ul>
+      <li>
+        Your flex items can flow the main or cross axis, also reversed.
+      </li>
+      <li>
+        The default direction is <code>flex-direction: row;</code> which means the items are flowing straight the main-axis
+      </li>
+    </ul>
     <div class="btns">
-      <label for="row">row (default) <input type="radio" name="flexdirection" value="row" id="row" checked></label>
-      <label for="row-reverse">row-reverse <input type="radio" name="flexdirection"  value="row-reverse" id="row-reverse"></label>
-      <label for="column">column <input type="radio" name="flexdirection"  value="column" id="column"></label>
-      <label for="column-reverse">column-reverse <input type="radio" name="flexdirection"  value="column-reverse" id="column-reverse"></label>
+      <input type="button" name="flexdirection" value="row" id="row">
+      <input type="button" name="flexdirection"  value="row-reverse" id="row-reverse">
+      <input type="button" name="flexdirection"  value="column" id="column">
+      <input type="button" name="flexdirection"  value="column-reverse" id="column-reverse">
     </div>
     <div class="dir">
       <label for="ltr">left -> right <input type="radio" value="ltr" name="direction" id="ltr" checked></label><br />
