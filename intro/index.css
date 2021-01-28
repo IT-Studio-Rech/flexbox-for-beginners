@@ -30,3 +30,7 @@ aside {
   align-items: center;
   justify-content: center;
 }
+
+.right-bar>div {
+  width: 150px;
+}
