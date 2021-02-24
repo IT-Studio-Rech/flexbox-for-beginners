@@ -1,24 +1,24 @@
 export const classHandler = (containerClass, buttonMode) => {
-  let btns = document.querySelector('.btns').querySelectorAll('input'),
-      dirs = document.querySelector('.dir').querySelectorAll('input'),
-      container = document.querySelector(containerClass);
+  let buttons = document.querySelector('.buttons').querySelectorAll('input');
+  let dirs = document.querySelector('.dir').querySelectorAll('input');
+  let container = document.querySelector(containerClass);
   let extra;
       if (buttonMode === 'EXTRA') {
         extra = document.querySelector('.extra');
       }
 
-  for (let i of btns) {
+  for (let i of buttons) {
     (function(i) {
       i.addEventListener('click', function() {
         if (buttonMode === 'TOGGLE') {
           container.classList.toggle(i.value);
         }
         else if (buttonMode === 'EXTRA') {
-          clearClasses(extra, btns);
+          clearClasses(extra, buttons);
           extra.classList.add(i.value);
         }
         else {
-          clearClasses(container, btns);
+          clearClasses(container, buttons);
           container.classList.add(i.value);
         }
       }, false);
@@ -34,9 +34,9 @@ export const classHandler = (containerClass, buttonMode) => {
     })(i);
   }
 
-  function clearClasses (el, cl) {
-    for (let i of cl) {
-      el.classList.remove(i.value);
+  function clearClasses (element, classes) {
+    for (let clazz of classes) {
+      element.classList.remove(clazz.value);
     }
   }
 }

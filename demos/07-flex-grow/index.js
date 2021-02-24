@@ -1,6 +1,6 @@
 import('../../utils/doc-ready.js').then((module) => {
   module.docReady(() => {
-    let input = document.querySelector('.btns').querySelector('input'),
+    let input = document.querySelector('.buttons').querySelector('input'),
         dirs = document.querySelector('.dir').querySelectorAll('input'),
         container = document.querySelector('.container'),
         flexitem = document.querySelector('.extra');
